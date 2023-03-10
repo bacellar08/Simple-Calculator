@@ -8,9 +8,14 @@ function clearDisplay() {
 }
 
 $(".backspace").click(function(){
-    var result = document.querySelector("#result").innerHTML    
-    document.querySelector("#result").innerHTML = result.substring(0, result.length - 1)
+    var result = $("#result").html()  
+    $("#result").html(result.substring(0, result.length - 1))
 })
+
+// $(".backspace").click(function(){
+//     var result = document.querySelector("#result").innerHTML    
+//     document.querySelector("#result").innerHTML = result.substring(0, result.length - 1)
+// })
 
 // var backspace = document.querySelector(".backspace")
         
